@@ -7,8 +7,8 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>Anshu's Blog</h1>
-            <span class="subheading">A collection of random musings.</span>
+            <h1><span id="typed"></span></h1>
+            <span class="subheading">A collection of random Blogs.</span>
           </div>
         </div>
       </div>
@@ -50,5 +50,19 @@
     </div>
   </div>
   <hr>
+
+
+  <script>
+    var typed = new Typed('#typed', {
+      strings: ["Anshu's Blog", "Enjoy My Blog"],
+      backSpeed: 15,
+      smartBackspace: true,
+      backDelay: 1200,
+      startDelay: 1000,
+      typeSpeed: 25,
+      loop: true,
+
+    });
+  </script>
 
 {% include "footer.html" %}
